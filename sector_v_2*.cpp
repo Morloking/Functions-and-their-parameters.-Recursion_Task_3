@@ -1,26 +1,24 @@
-//Version_1 Simple 
+//Version_2* 
 #include <iostream>
 
-int calcFib(int num) {
-	if (num == 1) return 0;
-	if (num == 2) return 1;
-	return calcFib(num-1)+calcFib(num-2);
-}
-void printFib(int num) {
-	for (int i = 1; i <= num; ++i) {
-		if (i > 1) std::cout << " ";
-		std::cout << calcFib(i);
+void printFib(unsigned long long num) {
+	unsigned long long fir = 0, sec = 1;
+	if (num == 1) { std::cout << fir; return; }
+	if (num >= 2) { std::cout << fir << " " << sec;}
+	for (unsigned long long i = 3; i <= num; ++i) {
+		unsigned long long next = fir + sec;
+		std::cout << " " << next;
+		fir = sec;
+		sec = next;
 	}
 	std::cout << "\n";
 }
 
 int main() {
 	setlocale(LC_ALL, "RUSSIAN");
-	int num{ 0 };
-	std::cout << "Ââåäèòå ÷èñëî: ";
+	unsigned long long num{ 0 };
+	std::cout << "Введите число: ";
 	std::cin >> num;
-	std::cout << "×èñëà Ôèáîíà÷÷è: ";
+	std::cout << "Числа Фибоначчи: ";
 	printFib(num);
 }
-
-//Version_2* 
