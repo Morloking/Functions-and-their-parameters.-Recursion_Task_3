@@ -17,9 +17,9 @@ void printFib(int num) {
 int main() {
 	setlocale(LC_ALL, "RUSSIAN");
 	int num{ 0 };
-	std::cout << "Ââåäèòå ÷èñëî: ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®: ";
 	std::cin >> num;
-	std::cout << "×èñëà Ôèáîíà÷÷è: ";
+	std::cout << "Ã—Ã¨Ã±Ã«Ã  Ã”Ã¨Ã¡Ã®Ã­Ã Ã·Ã·Ã¨: ";
 	printFib(num);
 }
 
