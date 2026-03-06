@@ -1,4 +1,4 @@
-//Version_1 Simple 
+//Version_1_Simple 
 #include <iostream>
 
 int calcFib(int num) {
@@ -17,10 +17,8 @@ void printFib(int num) {
 int main() {
 	setlocale(LC_ALL, "RUSSIAN");
 	int num{ 0 };
-	std::cout << "Ââåäèòå ÷èñëî: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 	std::cin >> num;
-	std::cout << "×èñëà Ôèáîíà÷÷è: ";
+	std::cout << "Ð§Ð¸ÑÐ»Ð° Ð¤Ð¸Ð±Ð¾Ð½Ð°Ñ‡Ñ‡Ð¸: ";
 	printFib(num);
 }
-
-//Version_2* 
